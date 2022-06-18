@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/nishLogo1.png"/>
+    <title>Nishant Prajapati | Home</title>
+
+    <style>
+      body 
+      {
+        margin: 0;
+      }
+	  
+	  html, body 
+	  {
+        height: 100%;
+        margin: 0;
+      }
+
+      .topnav 
+      {
+        overflow: hidden;
+        background-color: white;
+        position:fixed;
+        width:100%;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        padding-top:0.5%;
+        padding-bottom:0.5%;
+        z-index:2;
+      }
+
+      .topnav img
+      {
+        float:left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        width:20%;
+      }
+
+      .topnav a 
+      {
+        float:right;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover 
+      {
+        color: grey;
+      }
+
+      .topnav .icon 
+      {
+        display: none;
+      }
+
+      
+		
+  	  .columnIntroText 
+        {
+          float: left;
+          width: 50%;
+          margin-bottom:3%;
+        }
+  	  
+  	  .columnIntroImg
+        {
+          float: left;
+          width: 50%;
+          margin-bottom:3%;
+        }
+	  
+      .rowIntro:after 
+      {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .social 
+      { 
+        width: 100%;
+        top: 50%;
+        text-align: center;
+      }
+
+      .social .link 
+      {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-clip: content-box;
+        font-size: 150%;
+      }
+
+      .social .link span 
+      {
+        display: block;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .social .link:hover 
+      {
+        padding: 1px;
+        color: white;
+      }
+
+      .social .link.envelope
+      {
+        background-color: black;
+        color: white;
+      }
+      .social .link.envelope:hover
+      {
+        background-color: #555;
+        color: white;
+      }
+
+      .social .link.linkedin 
+      {
+        background-color: black;
+        color: white;
+      }
+      .social .link.linkedin:hover
+      {
+        background-color: #555;
+        color: white;
+      }
+
+      .social .link.medium
+      {
+        background-color: black;
+        color: white;
+      }
+      .social .link.medium:hover
+      {
+        background-color: #555;
+        color: white;
+      }
+
+      .social .link.github
+      {
+        background-color: black;
+        color: white;
+      }
+      .social .link.github:hover
+      {
+        background-color: #555;
+        color: white;
+      }
+
+      html 
+      {
+        box-sizing: border-box;
+      }
+
+      *, *:before, *:after 
+      {
+        box-sizing: inherit;
+      }
+
+      .columnCard 
+      {
+        float: left;
+        width: 50%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+
+      .card1 
+      {
+        margin-left: 30%;
+        margin-right: 5%;
+      }
+
+      .card2 
+      {
+        margin-left: 5%;
+        margin-right: 30%;
+      }
+
+      .containerCard 
+      {
+        padding: 5%;
+        background-color: white;
+        border-radius:15px;
+      }
+
+      .containerCard::after, .rowCard::after 
+      {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .footer 
+      {
+         padding-top:2.5%;
+         padding-bottom:2.5%;
+         width: 100%;
+         background-color:#F5F5F5;
+         color: black;
+         text-align: center;
+      }
+
+      .button 
+      {
+        background-color: #00416d;
+        border: none;
+        color: white;
+        padding: 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 30px;
+        width: 100px;
+      }
+
+      .button:hover 
+      {
+        background-color: #555;
+      }
+
+      .button_resume 
+      {
+        background-color: #00416d;
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 30px;
+      }
+
+      .button_resume:hover 
+      {
+        background-color: #555;
+      }
+
+      .anchor 
+      {
+        position: relative;
+      }
+
+      .anchor a 
+      {
+        position: absolute;
+        left: 0px;
+        top: -8%;
+      }
+
+      .columnAwardsText 
+      {
+        float: left;
+        width: 75%;
+        padding: 5px;
+      }
+
+      .columnAwardsImg 
+      {
+        float: left;
+        width: 25%;
+        padding: 5px;
+      }
+
+      .rowAwards::after 
+      {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .columnBlog 
+      {
+        float: left;
+        width: 33.33%;
+        margin-bottom: 16px;
+      }
+
+      .rowBlog 
+      {
+        margin: 0 0px;
+      }
+
+      .rowBlog:after 
+      {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .cardBlog 
+      {
+        padding: 2%;
+        text-align: center;
+        margin-right:10%;
+        margin-left:10%;
+        border-radius:15px;
+      }
+
+      .cardBlog img
+      {
+        width:100%;
+      }
+      @media screen and (max-width: 900px) 
+      {
+        .topnav img
+        {
+          float:left;
+          display: block;
+          color: black;
+          text-align: center;
+          width:40%;
+        }
+
+        .topnav a 
+        {
+          display: none;
+        }
+
+        .topnav a.icon 
+        {
+          float: right;
+          display: block;
+        }
+        
+        .topnav.responsive 
+        {
+          position: fixed;
+        }
+
+        .topnav.responsive .icon 
+        {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+
+        .topnav.responsive a 
+        {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+
+        .columnIntroText
+        {
+          width: 100%;
+        }
+		
+		.columnIntroImg
+        {
+          width: 100%;
+        }
+		
+        .anchor a 
+        {
+          position: absolute;
+          left: 0px;
+          top: -2%;
+        }
+
+        .columnCard 
+        {
+          width: 100%;
+          display: block;
+        }
+
+        .card1 
+        {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          margin-left: 20%;
+          margin-right: 20%;
+        }
+
+        .card2 
+        {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          margin-left: 20%;
+          margin-right: 20%;
+        }
+
+        .columnAwardsText 
+        {
+          width: 100%;
+        }
+
+        .columnAwardsImg 
+        {
+          width: 100%;
+          padding-left:25%;
+          padding-right:25%;
+        }
+
+        .columnBlog 
+        {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+
+        .cardBlog img
+        {
+          width:75%;
+        }
+      }
+
+      @media screen and (max-width: 600px) 
+      {
+        .cardBlog img
+        {
+          width:100%;
+        }
+        .card1 
+        {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          margin-left: 10%;
+          margin-right: 10%;
+        }
+        .card2 
+        {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          margin-left: 10%;
+          margin-right: 10%;
+        }
+      }
+    </style>
+  </head>
+
+
+  <body>
+
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" style="font-family: 'Open Sans', sans-serif; margin-right:2%; color:black; border-bottom: 2px solid #00416d;">Home</a>
+      <a href="contact.html" style="font-family: 'Open Sans', sans-serif;">Contact</a>
+      <a href="https://drive.google.com/file/d/1DJyaG8i-64C-zQJj3P6F-qpm0Y0UKgbS/view?usp=sharing" style="font-family: 'Open Sans', sans-serif;" target="_blank">Resume</a>
+      <a href="about.html" style="font-family: 'Open Sans', sans-serif;">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <h1 style="font-family: 'Abril Fatface', cursive; float:left; font-size:125%; margin-left:2%;">Nishant Prajapati</h1>
+    </div>
+
+    <br><br><br>
+
+    <div class="rowIntro" style="padding-right:5%;padding-left:5%; padding-top:7.5%; margin-bottom:-10%; height:100%;">
+      <div class="columnIntroImg" style=" text-align:center;">
+          <img src="images/nishHome.png" width="65%" alt="Nishant's Barca">
+      </div>
+      <div class="columnIntroText" style=" text-align:center;padding-top:3%; ">
+          <a style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:400%;"><span style="background: linear-gradient(to top, #dbf6e9 50%, transparent 50%);">Nishant Prajapati</span></a>
+          <br><br>
+          <p style="font-family: 'Open Sans', sans-serif; font-size:112.5%; ">A final year Computer Science Undergraduate, who is passionate about solving problems using the power of programming.<br><br></p>
+          <div class="social">
+              
+              <a href="https://www.linkedin.com/in/nishant-prajapati-0907" class="link linkedin" target="_blank"><span class="fa fa-linkedin"></span></a>
+              <a href="mailto:beingnishant7@gmail.com" class="link envelope" target="_blank"><span class="fa fa-envelope"></span></a>
+              <a href="https://github.com/nishantwestside" class="link github" target="_blank"><span class="fa fa-github"></span></a>
+          </div>
+      </div>
+    </div>
+
+    <div class="anchor" style="padding-top:2.5%;" >
+      <a name="target" id="internships"> </a>
+    </div>
+
+    <p style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:300%; color:black;margin-right:3%;margin-left:3%;padding-bottom:1.5%;"><span style="background: linear-gradient(to top, #dbf6e9 50%, transparent 50%);">
+        Experience</span>
+    </p>
+
+    <div class="rowAwards" style="font-family: 'Open Sans', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
+      <div class="columnAwardsImg" style="text-align:center;">
+            <img src="images/frtIntern.png" alt="bnym logo" style="width:50%;">
+      </div>
+      <div class="columnAwardsText">
+            <p style="font-family: 'Open Sans', sans-serif; margin-top:2%; "><b style="font-family: 'Open Sans', sans-serif; font-size:125%;"><a href="https://www.bnymellon.com/apac/en.html" target="_blank" style="text-decoration: none;color:#00416d;">
+                Future Ready Talent, Remote</a></b> <br><b>Student Intern | Sept 2021 - Jan 2022</b>
+            </p>
+            <p style="font-family: 'Open Sans', sans-serif;">
+              Diversified an <b>Azure based project</b> by learning elementary skills about Microsoft Azure and GitHub. 
+            </p>
+      </div>
+    </div>
+    
+
+<br>
+
+    <div class="viewResume" style="text-align:center; padding-top:3%;padding-bottom:3%;">
+      <button class="button_resume">
+        <a href="https://drive.google.com/file/d/1DJyaG8i-64C-zQJj3P6F-qpm0Y0UKgbS/view?usp=sharing" style="font-family: 'Open Sans', sans-serif; text-decoration: none; color:white;" target="_blank">
+            View Resume
+        </a>
+      </button>
+    </div>
+
+
+    <div class="projectBG" style="background-color: black; padding-bottom: 2%;">
+    <div class="anchor" style="padding-top:2.5%;">
+      <a name="target" id="projects"> </a>
+    </div>
+
+    <p style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:300%; color:white;margin-right:3%;margin-left:3%;padding-bottom:1.5%;"><span style="background: linear-gradient(to top, #00416d 50%, transparent 50%);">
+        Projects</span>
+    </p>
+    <div class="rowCard">
+      <div class="columnCard">
+        <div class="card1">
+          
+          <div class="containerCard" >
+            <img src="images/azureProject.jpg" alt="expected results and results obtained" style="width:100%; border-radius:15px;">
+            <b style="font-family: 'Open Sans', sans-serif; font-size:115%;">
+                Language Translation using Azure: Angular Application
+            </b>
+            <p>
+                  <button class="button" style="font-family: 'Open Sans', sans-serif;">
+                      <a href="https://github.com/nishantwestside/Language-Translation-Using-Azure" style="text-decoration: none;color:white;" target="_blank">Code</a>
+                  </button> 
+                 
+              </p>
+            
+            <p style="font-family: 'Open Sans', sans-serif;">
+              Language Translation is implemented using Angular Application which in turns uses Azure Text Translation Service which converts a text from one language to another language.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="columnCard">
+        <div class="card2">
+          
+            <div class="containerCard">
+              <img src="images/ddmGUI.jpg" alt="Drowsiness Detection Model" style="width:100%; border-radius:15px;">
+              <b style="font-family: 'Open Sans', sans-serif; font-size:115%;">
+                  Drowsiness Detection Model Using Python: GUI Based
+              </b>
+              <p>
+                  <button class="button" style="font-family: 'Open Sans', sans-serif;">
+                      <a href="https://github.com/nishantwestside/Drowsiness-Detection-Model-GUI-Based" style="text-decoration: none;color:white;" target="_blank">Code</a>
+                  </button> 
+              </p>
+              <p style="font-family: 'Open Sans', sans-serif;">
+                The objective of this Python project is to build a Drowsiness Detection Model that will detect when eyes are closed for a few seconds. This system will generate alert when drowsiness is detected.
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+	  <div class="rowCard">
+      <div class="columnCard">
+        <div class="card1">
+          
+          <div class="containerCard" >
+            <img src="images/westside.jpg" alt="West Side" style="width:100%; border-radius:15px;">
+            <b style="font-family: 'Open Sans', sans-serif; font-size:115%;">
+                West Side: A Static Website for Understanding Basic Web Development
+            </b>
+            <p>
+                  <button class="button" style="font-family: 'Open Sans', sans-serif;">
+                      <a href="https://nishantwestside.github.io/westside/" style="text-decoration: none;color:white;" target="_blank">Site</a>
+                  </button> 
+                  <button class="button" style="font-family: 'Open Sans', sans-serif;">
+                      <a href="https://github.com/nishantwestside/westside/" style="text-decoration: none;color:white;" target="_blank">Code</a>
+                  </button> 
+              </p>
+            
+            <p style="font-family: 'Open Sans', sans-serif;">
+              This project is developed to understand the basics of HTML and CSS. This projects deals with various types of CSS elements and an intermediate level of HTML coding.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="columnCard">
+        <div class="card2">
+          
+            <div class="containerCard">
+              <img src="images/smsC.jpg" alt="Student Management" style="width:100%; border-radius:15px;">
+              <b style="font-family: 'Open Sans', sans-serif; font-size:115%;">
+                  Student Management System: CLI Based System
+              </b>
+              <p>
+                  <button class="button" style="font-family: 'Open Sans', sans-serif;">
+                      <a href="https://github.com/nishantwestside/Student-Management-System/" style="text-decoration: none;color:white;" target="_blank">Code</a>
+                  </button> 
+              </p>
+              <p style="font-family: 'Open Sans', sans-serif;">
+                This systems work to coordinate scheduling and communications between faculty regarding students. This system exists to simplify information tracking for both parents and administrative staff.
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+  
+      
+    </div>
+  </div>
+
+    <div class="anchor" style="padding-top:2.5%;">
+      <a name="target" id="publications"> </a>
+    </div>
+
+    <p style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:300%; color:black;margin-right:3%;margin-left:3%;padding-bottom:1.5%;"><span style="background: linear-gradient(to top, #dbf6e9 50%, transparent 50%);">
+        Publications</span>
+    </p>
+
+        <p style="font-family: 'Open Sans', sans-serif; margin-left:7.5%;margin-right:7.5%; border-radius:15px; background-color: #fafafa; padding:2.5%;">
+            <b style="font-family: 'Open Sans', sans-serif; font-size:125%;">
+            Drowsiness Detection Model Using Python<br></b><a href="https://www.irjet.net/" target="_blank" style="text-decoration: none;color:#00416d"><b>IRJET 2022 (International Research Journal of Engineering and Technology)</b></a> <button class="button" style="font-family: 'Open Sans', sans-serif;">
+                      <a href="https://www.irjet.net/archives/V9/i4/IRJET-V9I4192.pdf" style="text-decoration: none;color:white;" target="_blank">Publication</a>
+                  </button> 
+            <br>
+        </p>
+
+
+    <div class="anchor" style="padding-top:2.5%;">
+        <a name="target" id="awards"> </a>
+    </div>
+
+    <p style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:300%; color:black;margin-right:3%;margin-left:3%;padding-bottom:1.5%;"><span style="background: linear-gradient(to top, #dbf6e9 50%, transparent 50%);">
+        Awards</span>
+    </p>
+
+   
+    <hr style=" display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    margin-left:7.5%;
+    margin-right:7.5%;">
+    <div class="rowAwards" style="font-family: 'Open Sans', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
+      <div class="columnAwardsImg" style="text-align:center;">
+        <img src="images/algoraLogo.jpeg" alt="algora Logo" style="width:90%;">
+      </div>
+      <div class="columnAwardsText">
+        <p style="font-family: 'Open Sans', sans-serif;">
+          <b style="font-family: 'Open Sans', sans-serif; font-size:125%;">
+              Algora Fest 2022 - First Runner Up</b><br><b><a href="https://www.ritm.in/" target="_blank" style="text-decoration: none; color: #00416d">RITM, Lucknow</a> | May 2022</b>
+        </p>
+        <p>
+          • Won trophy and certificate for building a Python project "Drowsiness Detection Model."<br>• Selected by the professionals of IET Lucknow.
+		</p>
+    <button class="button" style="font-family: 'Open Sans', sans-serif;">
+                      <a href="https://github.com/nishantwestside/Drowsiness-Detection-Model" style="text-decoration: none;color:white;" target="_blank">Code</a>
+                  </button> <button class="button" style="font-family: 'Open Sans', sans-serif;">
+                      <a href="https://www.irjet.net/archives/V9/i4/IRJET-V9I4192.pdf" style="text-decoration: none;color:white;" target="_blank">Paper</a>
+                  </button> 
+      </div>
+    </div>
+   
+
+
+    <br><br><br>
+    <div class="footer">
+      <p style="font-family: 'Open Sans', sans-serif;">
+        Ahh... you've reached the end!
+      </p>
+      <p style="font-family: 'Open Sans', sans-serif;">
+        Let's connect!
+        <div class="social">
+        
+        <a href="https://www.linkedin.com/in/nishant-prajapati-0907" class="link linkedin" target="_blank" style="display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 37.5px;
+  height: 37.5px;
+  border-radius: 50%;
+  background-clip: content-box;
+  color: white;font-size: 125%;"><span class="fa fa-linkedin" ></span></a>
+          <a href="mailto:beingnishant7@gmail.com" class="link envelope" target="_blank" style="display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 37.5px;
+  height: 37.5px;
+  border-radius: 50%;
+  background-clip: content-box;
+  color: white;font-size: 125%;"><span class="fa fa-envelope"></span></a>
+          <a href="https://github.com/nishantwestside" class="link github" target="_blank" style="display: inline-block;
+          vertical-align: middle;
+          position: relative;
+          width: 37.5px;
+          height: 37.5px;
+          border-radius: 50%;
+          background-clip: content-box;
+          color: white;font-size: 125%;"><span class="fa fa-github"></span></a>
+           
+        
+        
+        </div>
+      </p>
+      <p style="font-family: 'Open Sans', sans-serif;"> &#169; Designed and created with <i class="fa fa-heart"></i> by Nishant Prajapati</p>
+      <br>
+    </div>
+
+
+    <script>
+      function myFunction() 
+      {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") 
+        {
+          x.className += " responsive";
+        } 
+        else 
+        {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+  </body>
+</html>
